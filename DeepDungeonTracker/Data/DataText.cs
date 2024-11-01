@@ -37,6 +37,7 @@ public unsafe class DataText
             ClientLanguage.English => Language.English,
             ClientLanguage.German => Language.German,
             ClientLanguage.French => Language.French,
+            ClientLanguage.ChineseSimplified => Language.ChineseSimplified,
             _ => Language.English,
         };
     }
