@@ -37,7 +37,7 @@ public class DataOpCodes
 
         var uri = "https://raw.githubusercontent.com/karashiiro/FFXIVOpcodes/master/opcodes.min.json";
         var result = await NetworkStream.Load<ImmutableList<Root>>(new(uri)).ConfigureAwait(true);
-        var opCodes = result?.Find(x => x.Region == "Global")?.Lists.ServerZoneIpcType;
+        var opCodes = result?.Find(x => x.Region == "CN")?.Lists.ServerZoneIpcType;
 
         for (var i = 0; i < opCodes?.Count; i++)
         {
